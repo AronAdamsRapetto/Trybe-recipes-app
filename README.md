@@ -7,6 +7,11 @@ A implementação foi feita em conjunto com: [lolymaluf](https://github.com/loly
 
 Neste projeto desenvolvemos um aplicativo para ver, buscar, filtrar, favoritar e acompanhar o progresso de preparação de receitas e drinks, utilizando o que há de mais moderno dentro do ecossistema React: Hooks e Context API!
 
+As stacks utiizadas para o desenvolvimento desta aplicação foram:
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=React&logoColor=black)
+![RTL](https://img.shields.io/badge/-RTL-61DAFB?style=flat-square&logo=react&logoColor=black)
+![CSS](https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
+
 A base de dados utilizadas foram 2 APIs distintas, uma para comidas e outra para bebidas.
 
 O layout tem como foco dispositivos móveis, dessa forma todos os protótipos vão estar desenvolvidos em telas menores.
@@ -21,9 +26,9 @@ O layout tem como foco dispositivos móveis, dessa forma todos os protótipos v�
 
 ---
 ### Localmente
-❗Para rodar o projeto localmente será necessário ter instalado o npm v16+ em sua máquina 
+❗Para rodar o projeto localmente será necessário ter instalado o  [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) v16+ em sua máquina .
 
-Instale as depêndencias na raiz do projeto:
+Acesse o terminal e instale as depêndencias na raiz do projeto:
 
 ```
 npm install
@@ -32,10 +37,21 @@ Em seguida dê start na aplicação:
 ```
 npm start
 ```
-Caso não abra automaticamente, vá no seu navegador e acesse `localhost:3000`
+Caso não abra automaticamente, vá no seu navegador e acesse `localhost:3000`.
 
 ## Executando os teste
 ---
+
+Os testes só serão executados após a instalação das depêndencias.
+
+No terminal digite o seguinte comando:
+```
+npm test
+```
+Para verificar a cobertura de testes da aplicação execute no terminal:
+```
+npm run test-coverage
+```
 
 <!-- Olá, Tryber!
 
