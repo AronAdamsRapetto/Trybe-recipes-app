@@ -21,7 +21,7 @@ O layout tem como foco dispositivos móveis, dessa forma todos os protótipos v�
 
 ---
 ### Localmente
-❗Para rodar o projeto localmente será necessário estar instalado o node v16+ em sua máquina 
+❗Para rodar o projeto localmente será necessário ter instalado o npm v16+ em sua máquina 
 
 Instale as depêndencias na raiz do projeto:
 
