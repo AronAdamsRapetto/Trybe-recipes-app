@@ -16,7 +16,7 @@ A base de dados utilizadas foram 2 APIs distintas, uma para comidas e outra para
 
 O layout tem como foco dispositivos móveis, dessa forma todos os protótipos vão estar desenvolvidos em telas menores.
 
-⚠️ A inferface para dispositivos de telas maiores está em desnvolvimento.⚠️
+⚠️ A inferface para dispositivos de telas maiores está em desenvolvimento.⚠️
 
 
 ## Executando o projeto
