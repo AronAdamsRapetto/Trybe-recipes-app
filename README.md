@@ -1,4 +1,4 @@
-# # Projeto - App de receitas
+# Projeto - App de receitas
 ---
 ## O que foi desenvolvido:
 
