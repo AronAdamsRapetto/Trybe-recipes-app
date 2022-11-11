@@ -21,6 +21,7 @@ O layout tem como foco dispositivos móveis, dessa forma todos os protótipos v�
 
 ---
 ### Localmente
+❗Para rodar o projeto localmente será necessário estar instalado o node v16+ em sua máquina 
 
 Instale as depêndencias na raiz do projeto:
 
@@ -37,10 +38,6 @@ Caso não abra automaticamente, vá no seu navegador e acesse `localhost:3000`
 ---
 
 <!-- Olá, Tryber!
-
-Esse é apenas um arquivo inicial para o README do seu projeto.
-
-É essencial que você preencha esse documento por conta própria, ok?
 
 Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
 
