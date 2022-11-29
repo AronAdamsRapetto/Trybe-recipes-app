@@ -23,9 +23,9 @@ function ProfileRecipeFilter({ profileRecipes, setRecipes, storageKey }) {
   }, [profileRecipes]);
 
   return (
-    <div className="all-food-drinks-bttn">
+    <div className="all-food-drinks-btn">
       <button
-        className="all-bttn"
+        className="all-btn-filter"
         type="button"
         data-testid="filter-by-all-btn"
         onClick={ resetAll }
@@ -33,7 +33,7 @@ function ProfileRecipeFilter({ profileRecipes, setRecipes, storageKey }) {
         All
       </button>
       <button
-        className="foods-bttn"
+        className="foods-btn-filter"
         type="button"
         data-testid="filter-by-food-btn"
         onClick={ filterFood }
@@ -41,7 +41,7 @@ function ProfileRecipeFilter({ profileRecipes, setRecipes, storageKey }) {
         Foods
       </button>
       <button
-        className="drinks-bttn"
+        className="drinks-btn-filter"
         type="button"
         data-testid="filter-by-drink-btn"
         onClick={ filterDrink }
