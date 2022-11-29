@@ -17,7 +17,7 @@ function RecipeCard({
           src={ recipeImage }
           alt={ `${recipeName}` }
         />
-        <h5 data-testid={ nameTestId }>{ recipeName }</h5>
+        <h6 data-testid={ nameTestId }>{ recipeName }</h6>
       </div>
     </Link>
   );

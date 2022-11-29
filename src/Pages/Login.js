@@ -27,7 +27,7 @@ const Login = (props) => {
   useEffect(() => {
     const validaEmail = () => {
       const validator = /\S+@\w+\.\w+/;
-      return validator.test(user.email); // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test
+      return validator.test(user.email);
     };
 
     const validButton = () => {

@@ -1,10 +1,7 @@
-body {
-  background-color: rgb(134, 124, 124);
-}
-
 .recipe-card {
-  background-color: black;
+  background-color: rgba(50, 50, 50, 1);
   border-radius: 8px;
+  box-shadow: 1px 8px 8px 0 rgba(0, 0, 0, 0.2);
   color: white;
   flex-basis: 30%;
   height: 150px;
@@ -24,13 +21,7 @@ body {
   width: 100%;
 }
 
-.recipe-card h5 {
+.recipe-card h6 {
   color: white;
   margin: 0 0 5px 5px;
 }
-
-/* .done-recipe-card {
-  background-color: red;
-  margin: 20px;
-  padding: 10px;
-} */

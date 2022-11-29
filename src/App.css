@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+
+  /* stylelint-disable-next-line max-line-length */
+  background: linear-gradient(0deg, rgba(50, 50, 50, 1) 0%, black 50%, rgba(84, 84, 84, 1) 100%);
+  min-height: 100vh;
+}
+
+body {
+  font-family: Arial , Helvetica , sans-serif;
+  min-height: 100vh;
+}

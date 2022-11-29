@@ -5,11 +5,6 @@
   display: flex;
 }
 
-/* h2 {
-  font-size: large;
-  font-weight: 2000;
-} */
-
 .header-container {
   flex-direction: column;
 }

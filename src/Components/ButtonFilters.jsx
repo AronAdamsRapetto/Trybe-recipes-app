@@ -56,12 +56,12 @@ function ButtonFilters({ recipeType }) {
     }
   };
 
-  const MAX_LENGTH_FILTERS = 5;
+  // const MAX_LENGTH_FILTERS = 5;
 
   return (
-    <section>
+    <section className="btn-filters-container">
       <button
-        className="all-bttn"
+        className="all-btn"
         type="button"
         id="All"
         onClick={ handleClick }
@@ -71,23 +71,18 @@ function ButtonFilters({ recipeType }) {
 
       </button>
       {
-        categorys.map(({ strCategory }, index) => {
-          if (index < MAX_LENGTH_FILTERS) {
-            return (
-              <button
-                className="filter-bttn"
-                key={ index }
-                type="button"
-                id={ strCategory }
-                data-testid={ `${strCategory}-category-filter` }
-                onClick={ handleClick }
-              >
-                { strCategory }
-              </button>
-            );
-          }
-          return null;
-        })
+        categorys.map(({ strCategory }, index) => (
+          <button
+            className="filter-btn"
+            key={ index }
+            type="button"
+            id={ strCategory }
+            data-testid={ `${strCategory}-category-filter` }
+            onClick={ handleClick }
+          >
+            { strCategory }
+          </button>
+        ))
       }
     </section>
   );
