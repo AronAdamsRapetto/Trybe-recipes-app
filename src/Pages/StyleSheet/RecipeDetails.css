@@ -65,6 +65,7 @@
 
 .recomended-container a {
   display: inline-block;
+  height: max-content;
   margin: 5px;
   width: 178px;
 }
