@@ -87,7 +87,7 @@ function SearchBar({ recipeType }) {
           className="input-search"
         />
         <button
-          className="searchbar-bttn"
+          className="searchbar-btn"
           type="button"
           data-testid="exec-search-btn"
           onClick={ searchButtonClick }

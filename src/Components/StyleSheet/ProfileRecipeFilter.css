@@ -1,35 +1,14 @@
-.all-food-drinks-bttn {
-  align-content: space-between;
+.all-food-drinks-btn {
+  align-items: center;
   display: flex;
-  justify-content: space-between;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 8px;
+  justify-content: space-around;
 }
 
-.all-bttn {
-  align-items: baseline;
-  background-color: black;
+.all-btn-filter, .foods-btn-filter, .drinks-btn-filter {
+  background-color: rgb(255, 174, 0);
+  border: none;
   border-radius: 15px;
-  color: white;
-  height: 35px;
-  width: 80px;
-}
-
-.foods-bttn {
-  align-items: baseline;
-  background-color: black;
-  border-radius: 15px;
-  color: white;
-  height: 35px;
-  width: 80px;
-}
-
-.drinks-bttn {
-  align-items: baseline;
-  background-color: black;
-  border-radius: 15px;
-  color: white;
-  height: 35px;
-  width: 80px;
+  color: black;
+  margin: 10px;
+  padding: 4px 24px;
 }

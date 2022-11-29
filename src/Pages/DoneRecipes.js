@@ -16,7 +16,7 @@ function DoneRecipes({ history: { location: { pathname } } }) {
   }, []);
 
   return (
-    <div>
+    <main>
       <Header headerText="Done Recipes" isSearchPage={ false } />
       <ProfileRecipeFilter
         profileRecipes={ doneRecipes }
@@ -51,7 +51,7 @@ function DoneRecipes({ history: { location: { pathname } } }) {
           />
         ))
       }
-    </div>
+    </main>
   );
 }
 

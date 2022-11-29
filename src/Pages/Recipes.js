@@ -35,33 +35,25 @@ function Recipes({ history: { location: { pathname } } }) {
     setInitalRecipes();
   }, [pathname, setRecipes, setIsLoading]);
 
-  const MAX_LENGTH_CARDS = 12;
-
   return (
     <main>
       <Header headerText={ recipeType } isSearchPage />
       <ButtonFilters recipeType={ recipeType } />
       <section className="recipes-container">
         {
-          !isLoading ? recipes.map((recipe, index) => {
-            if (index < MAX_LENGTH_CARDS) {
-              return (
-                <RecipeCard
-                  // key={ recipeType === 'Foods' ? recipe.idMeal : recipe.idDrink }
-                  key={ index }
-                  linkTestId={ `${index}-recipe-card` }
-                  nameTestId={ `${index}-card-name` }
-                  index={ index }
-                  recipeId={ recipeType === 'Foods' ? recipe.idMeal : recipe.idDrink }
-                  recipeImage={ recipeType === 'Foods'
-                    ? recipe.strMealThumb : recipe.strDrinkThumb }
-                  recipeName={ recipeType === 'Foods' ? recipe.strMeal : recipe.strDrink }
-                  recipeType={ recipeType }
-                />
-              );
-            }
-            return null;
-          }) : <h1 className="loading-element">Loading...</h1>
+          !isLoading ? recipes.map((recipe, index) => (
+            <RecipeCard
+              key={ index }
+              linkTestId={ `${index}-recipe-card` }
+              nameTestId={ `${index}-card-name` }
+              index={ index }
+              recipeId={ recipeType === 'Foods' ? recipe.idMeal : recipe.idDrink }
+              recipeImage={ recipeType === 'Foods'
+                ? recipe.strMealThumb : recipe.strDrinkThumb }
+              recipeName={ recipeType === 'Foods' ? recipe.strMeal : recipe.strDrink }
+              recipeType={ recipeType }
+            />
+          )) : <h1 className="loading-element">Loading...</h1>
         }
       </section>
       <Footer />

@@ -11,11 +11,13 @@
 }
 
 .input-search {
+  border: none;
   border-radius: 20px;
   height: 30px;
   margin: 5px;
   margin-left: 10px;
   margin-right: 5px;
+  padding: 0 8px;
   width: 300px;
 }
 
@@ -28,12 +30,11 @@
   margin-right: 20px;
 }
 
-.searchbar-bttn {
-  background-color: black;
-
-  /*   border-color: white; */
+.searchbar-btn {
+  background-color: rgb(255, 174, 0);
+  border: none;
   border-radius: 20px;
-  color: white;
+  color: black;
   height: 30px;
   margin-right: 10px;
   margin-top: 6px;
@@ -42,4 +43,8 @@
 
 .form-radio-contaniner label {
   margin: 0 5px 0 0;
+}
+
+.form-radio-contaniner label input {
+  margin-right: 4px;
 }

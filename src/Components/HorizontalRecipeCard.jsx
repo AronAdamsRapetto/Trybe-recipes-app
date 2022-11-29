@@ -82,7 +82,6 @@ function HorizontalRecipeCard({
           pathname === '/favorite-recipes' && (
             <FavoriteButton
               recipeId={ id }
-              // recipe={ favorites }
               index={ index }
               pathname={ pathname }
             />

@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+
+  /* stylelint-disable-next-line max-line-length */
+  background: linear-gradient(34deg, black 0%, rgba(54, 54, 54, 1) 50%, black 100%);
+  min-height: 100vh;
+}
+
+body {
+  font-family: Ubuntu , sans-serif;
+  min-height: 100vh;
+}

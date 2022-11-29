@@ -1,14 +1,20 @@
-.all-bttn {
-  background-color: black;
-  border-radius: 15px;
-  color: white;
-  margin-left: 1px;
+.btn-filters-container {
+  align-items: center;
+  display: flex;
+  overflow-x: auto;
 }
 
-.filter-bttn {
-  align-items: baseline;
-  background-color: black;
-  border-radius: 15px;
-  color: white;
-  margin: 1px;
+.btn-filters-container::-webkit-scrollbar {
+  background: transparent;
+}
+
+.all-btn, .filter-btn {
+  background-color: rgb(255, 174, 0);
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-family: Arial , Helvetica , sans-serif;
+  margin: 8px 3px 0;
+  min-width: max-content;
+  padding: 1px 5px;
 }

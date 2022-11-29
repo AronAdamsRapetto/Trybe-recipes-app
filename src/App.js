@@ -8,6 +8,7 @@ import DoneRecipes from './Pages/DoneRecipes';
 import RecipeDetails from './Pages/RecipeDetails';
 import RecipeInProgress from './Pages/RecipeInProgress';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 function App() {
   return (

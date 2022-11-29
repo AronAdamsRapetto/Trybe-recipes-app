@@ -13,7 +13,7 @@ function FavoriteRecipes({ history: { location: { pathname } } }) {
     setFavorites(currentFavorites);
   }, [setFavorites]);
   return (
-    <div>
+    <main>
       <Header headerText="Favorite Recipes" isSearchPage={ false } />
       <ProfileRecipeFilter
         profileRecipes={ favorites }
@@ -37,7 +37,7 @@ function FavoriteRecipes({ history: { location: { pathname } } }) {
           />
         ))
       }
-    </div>
+    </main>
   );
 }
 
