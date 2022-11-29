@@ -30,7 +30,7 @@ function Profile() {
   };
 
   return (
-    <main className="main-container-profile">
+    <main>
       <Header headerText="Profile" isSearchPage={ false } />
       <section className="container-profile-content">
         <h4 data-testid="profile-email">{ emailProfile }</h4>
