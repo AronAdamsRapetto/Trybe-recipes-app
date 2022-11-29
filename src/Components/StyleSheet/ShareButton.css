@@ -1,7 +1,7 @@
 .share-bttn {
-  background-color: black;
+  background-color: inherit;
   border: none;
-  margin-right: 15px;
+  margin: 5px;
 }
 
 .share-bttn img {

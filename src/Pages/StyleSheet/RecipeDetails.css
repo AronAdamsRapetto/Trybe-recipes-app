@@ -1,49 +1,64 @@
-main {
-  background-color: whitesmoke;
-}
-
-.instruction-paragraph p {
-  background-color: rgb(199, 199, 199);
-  border-radius: 15px;
-
-  /* font-family: monospace , Calibri , sans-serif; */
-  margin: 15px;
-  padding: 5px;
+.page-container {
+  min-height: max-content;
 }
 
 .header-image {
-  border: 10px solid black;
-  border-radius: 0% 0% 5% 5%;
   width: 100%;
 }
 
 .header-recipe-details h2 {
-  background-color: black;
+  background-color: rgb(255, 174, 0);
   border: none;
-  border-radius: 10px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  padding: 8px;
-}
-
-.header-recipe-details h5 {
-  background-color: rgb(199, 199, 199);
-  border: none;
-  border-radius: 10px;
   color: black;
   display: flex;
   justify-content: center;
-  margin-bottom: 15px;
+  margin: 0;
+}
+
+.header-info-container {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-recipe-details h5 {
+  color: white;
+}
+
+.fav-share-bttn {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+}
+
+.recipe-buttons-start-finish {
+  display: flex;
+  flex-direction: column;
+}
+
+.start-recipe-btn, .finish-btn {
+  background-color: rgb(255, 174, 0);
+  border: none;
+  border-radius: 10px;
+  color: black;
+  margin: 15px;
+  padding: 6px;
+}
+
+.instruction-paragraph p {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgb(255, 174, 0);
+  border-radius: 15px;
+  color: white;
+  margin: 15px;
   padding: 5px;
 }
 
 .recomended-container {
-
-  /* display: flex; */
-  margin-bottom: 35px;
+  height: 205px;
   overflow-x: scroll;
+  overflow-y: hidden;
   white-space: nowrap;
   width: 100vw;
 }
@@ -54,32 +69,6 @@ main {
   width: 178px;
 }
 
-.fav-share-bttn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.start-recipe-btn {
-  background-color: black;
-  border-radius: 10px;
-  bottom: 0;
-  color: white;
-  left: 135px;
-  padding: 6px;
-  position: fixed;
-}
-
-.finish-btn {
-  background-color: black;
-  border-radius: 10px;
-  bottom: 0;
-  color: white;
-  display: flex;
-  left: 135px;
-  padding: 6px;
-}
-
 .recipe-video iframe {
   align-items: center;
   background-color: black;
@@ -88,11 +77,3 @@ main {
   margin-left: 6%;
   padding: 10px;
 }
-
-.recipe-buttons-start-finish {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-

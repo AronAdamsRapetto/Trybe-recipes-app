@@ -81,7 +81,7 @@ function RecipeDetails({ history: { location: { pathname }, push } }) {
     <main>
       {
         !isLoading && (
-          <div>
+          <div className="page-container">
             <header
               className="header-recipe-details"
             >
@@ -96,22 +96,42 @@ function RecipeDetails({ history: { location: { pathname }, push } }) {
                 { recipeType === 'food'
                   ? detailedRecipe.strMeal : detailedRecipe.strDrink }
               </h2>
-              <h5 data-testid="recipe-category">
-                { recipeType === 'food'
-                  ? detailedRecipe.strCategory : detailedRecipe.strAlcoholic }
-              </h5>
-              <div
-                className="fav-share-bttn"
-              >
-                <ShareButton pathname={ pathname } />
-                <FavoriteButton
-                  recipeId={ id }
-                  recipe={ detailedRecipe }
-                  recipeType={ recipeType }
-                  pathname={ pathname }
-                />
+              <div className="header-info-container">
+                <h5 data-testid="recipe-category">
+                  Caregory:
+                  { recipeType === 'food'
+                    ? ` ${detailedRecipe.strCategory}`
+                    : ` ${detailedRecipe.strAlcoholic}` }
+                </h5>
+                <div
+                  className="fav-share-bttn"
+                >
+                  <ShareButton pathname={ pathname } />
+                  <FavoriteButton
+                    recipeId={ id }
+                    recipe={ detailedRecipe }
+                    recipeType={ recipeType }
+                    pathname={ pathname }
+                  />
+                </div>
               </div>
             </header>
+            {
+              !isFinishedRecipe && (
+                <div className="recipe-buttons-start-finish">
+                  <button
+                    type="button"
+                    data-testid="start-recipe-btn"
+                    onClick={ handleClick }
+                    className="start-recipe-btn"
+                  >
+                    {
+                      isInProgress ? 'CONTINUE RECIPE' : 'START RECIPE'
+                    }
+                  </button>
+                </div>
+              )
+            }
             <IngredientsRecipe
               recipeType={ recipeType }
               recipe={ detailedRecipe }
@@ -160,22 +180,6 @@ function RecipeDetails({ history: { location: { pathname }, push } }) {
                 })
               }
             </section>
-            {
-              !isFinishedRecipe && (
-                <div className="recipe-buttons-start-finis">
-                  <button
-                    type="button"
-                    data-testid="start-recipe-btn"
-                    onClick={ handleClick }
-                    className="start-recipe-btn"
-                  >
-                    {
-                      isInProgress ? 'Continue Recipe' : 'Start Recipe'
-                    }
-                  </button>
-                </div>
-              )
-            }
           </div>
         )
       }

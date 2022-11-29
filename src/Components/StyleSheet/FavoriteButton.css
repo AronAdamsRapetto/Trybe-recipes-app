@@ -1,13 +1,8 @@
 .favorite-bttn {
-  background-color: black;
+  background-color: inherit;
   border: none;
-  margin-left: 15px;
+  margin: 5px;
 }
-
-/* .favorite-bttn:hover {
-  transform: scale(1.1);
-  transition: all 0.5s;
-} */
 
 .favorite-bttn img {
   filter: invert();
