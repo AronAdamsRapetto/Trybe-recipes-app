@@ -87,20 +87,24 @@ function RecipeDetails({ history: { location: { pathname }, push } }) {
                 { recipeType === 'food'
                   ? detailedRecipe.strMeal : detailedRecipe.strDrink }
               </h2>
-              <h5 data-testid="recipe-category">
-                { recipeType === 'food'
-                  ? detailedRecipe.strCategory : detailedRecipe.strAlcoholic }
-              </h5>
-              <div
-                className="fav-share-bttn"
-              >
-                <ShareButton pathname={ pathname } />
-                <FavoriteButton
-                  recipeId={ id }
-                  recipe={ detailedRecipe }
-                  recipeType={ recipeType }
-                  pathname={ pathname }
-                />
+              <div className="header-info-container">
+                <h5 data-testid="recipe-category">
+                  Caregory:
+                  { recipeType === 'food'
+                    ? ` ${detailedRecipe.strCategory}`
+                    : ` ${detailedRecipe.strAlcoholic}` }
+                </h5>
+                <div
+                  className="fav-share-bttn"
+                >
+                  <ShareButton pathname={ pathname } />
+                  <FavoriteButton
+                    recipeId={ id }
+                    recipe={ detailedRecipe }
+                    recipeType={ recipeType }
+                    pathname={ pathname }
+                  />
+                </div>
               </div>
             </header>
             <IngredientsRecipe
